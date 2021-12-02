@@ -19,9 +19,13 @@ public class TpMedevMain {
     public static void main(String[] args) {
         LecteurPGM lecteur = new LecteurPGM("coins.pgm");
         
+        /**
         ArrayList<Integer> histo = lecteur.histogrammePGM();
         System.out.println(histo);
+        **/
         
+        Utils ut = new Utils("seuil.pgm" , "coins.pgm");
+        ut.seuillage(200);
     }
     
 }
